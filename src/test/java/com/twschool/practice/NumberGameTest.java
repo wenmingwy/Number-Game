@@ -16,5 +16,16 @@ public class NumberGameTest {
         Assert.assertEquals("Wrong Input，Input again",result);
     }
 
+    @Test
+    public void should_return_wrong_input_given_1_2(){
+//        given
+        int [] inputNumber = {1,2};
+        int [] answerNumber = {1,2,3,4};
+//        when
+        NumberGame numberGame = new NumberGame();
+        String result = numberGame.numberCompar(inputNumber,answerNumber);
+//        then
+        Assert.assertEquals("Wrong Input，Input again",result);
+    }
 }
 
